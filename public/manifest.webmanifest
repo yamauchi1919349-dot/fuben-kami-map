@@ -1,0 +1,23 @@
+{
+  "name": "KAMI地図",
+  "short_name": "KAMI地図",
+  "description": "案内しない、紙地図のように読むための地図アプリ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f3e7",
+  "theme_color": "#0b1f3a",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -7,8 +7,26 @@ export const metadata: Metadata = {
   applicationName: "KAMI地図",
   manifest: "/manifest.webmanifest",
   icons: {
-    icon: "/icon.png",
-    apple: "/icon.png"
+    icon: [
+      {
+        url: "/icon.png",
+        sizes: "1254x1254",
+        type: "image/png"
+      }
+    ],
+    apple: [
+      {
+        url: "/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png"
+      },
+      {
+        url: "/icon.png",
+        sizes: "1254x1254",
+        type: "image/png"
+      }
+    ],
+    shortcut: "/icon.png"
   },
   appleWebApp: {
     capable: true,

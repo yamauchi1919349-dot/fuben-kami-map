@@ -149,6 +149,10 @@ export function KamiMap() {
         keyboard: false
       })
       .addTo(map);
+
+    map.setView([location.lat, location.lng], Math.max(map.getZoom(), 15), {
+      animate: true
+    });
   }
 
   async function placeDestination(destination: GeocodeResult) {
@@ -192,7 +196,7 @@ export function KamiMap() {
 
       <div className="pointer-events-none fixed left-0 right-0 top-0 z-[650] px-4 pt-4">
         {(locationText || locationError) && (
-          <div className="mr-20 px-1 py-1 text-xs font-medium leading-5 text-[#0b1f3a] drop-shadow-[0_1px_1px_rgba(255,255,255,0.95)]">
+          <div className="mr-20 px-1 py-1 font-mono text-[13px] font-semibold leading-5 tracking-[0.045em] text-[#06213f] [text-shadow:0_1px_1px_rgb(255_255_255_/_0.95),0_2px_5px_rgb(15_23_42_/_0.28)]">
             {locationText ? (
               <p>
                 現在地：
